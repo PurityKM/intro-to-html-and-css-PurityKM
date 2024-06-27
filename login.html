@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="login-section">
+
+            <div class="login-image">
+                <!-- <img src="images/login-img.jpg" alt=""> -->
+            </div>
+
+            <div class="login-container">
+                <h2>Login</h2>
+                <form action="" method="post" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <label for="username">User Code:</label>
+                        <div class="input-icon">
+                            <input placeholder="" type="text" name="user_code">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 384 512"><path d="M336 0h-288C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48v-416C384 21.49 362.5 0 336 0zM192 160c35.35 0 64 28.65 64 64s-28.65 64-64 64S128 259.3 128 224S156.7 160 192 160zM288 416H96c-8.836 0-16-7.164-16-16C80 355.8 115.8 320 160 320h64c44.18 0 80 35.82 80 80C304 408.8 296.8 416 288 416zM240 96h-96C135.2 96 128 88.84 128 80S135.2 64 144 64h96C248.8 64 256 71.16 256 80S248.8 96 240 96z"/></svg>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <div class="input-icon">
+                            <input placeholder="" type="password" name="user_password" id="passwordField3">
+                            <svg id="togglePassword3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16"> <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/> <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/> </svg>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Confirm Password:</label>
+                        <div class="input-icon">
+                            <input placeholder="" type="password" name="confirm_password" id="passwordField4">
+                            <svg id="togglePassword4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16"> <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/> <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/> </svg>
+                        </div>
+                    </div>
+                    <div class="form-group rows">
+                        <input type="checkbox" name="rememberMe">
+                        <label for="rememberMe">Remember Me</label>
+                    </div>
+                    <div class="form-group">
+                        <a href="forgot.php">Forgot Password?</a>
+                    </div>
+                    <input type="submit" name="loginUser" class="btn-register" value="Login">
+                </form>
+                <div class="login-link">
+                    Don\'t have an account? <a href="register.html">Register</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
