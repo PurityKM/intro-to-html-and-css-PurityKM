@@ -14,7 +14,10 @@
         <div class="logo">
             <a href=""><i class="fas fa-wallet"></i> Expense</a>
         </div>
-        <div class="nav-items">
+        <div class="burger-menu" id="burgerMenu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-items" id="navItems">
             <ul>
                 <li>
                     <a href="#loginModal" class="modal-link"><i class="fas fa-sign-in-alt"></i> Login</a>
@@ -92,12 +95,80 @@
             </div>
         </div>
     </section>
-    <section class="footer-section">
-        <footer class="">
+    <section class="login-section">
+        <div class="contact-section">
+            <div class="login-image">
+                <img src="images/contact.webp" alt="">
+            </div>
 
-        </footer>
+            <div class="login-container">
+                <h2>Contact Us</h2>
+                <div class="cont-row">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input placeholder="Enter Your Name" type="text" name="user_code">
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Enter a Valid Email" type="email" name="user_password" id="passwordField3">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" rows="10" cols="43" id="">Your Message</textarea>
+                        </div>
+                        <input type="submit" name="loginUser" class="btn-register" value="Send Message">
+                    </form>
+
+                    <div class="contact-cat">
+                        <div class="contact-bx">
+                            <i class="fas fa-phone"></i>
+                            <h4>OUR MAIN OFFICE</h4>
+                            <h4>SoHo 94 Broadway <br>St New York, NY 1001</h4>
+                        </div>
+                        <div class="contact-bx">
+                            <i class="fas fa-envelope"></i>
+                            <h4>PHONE NUMBER</h4>
+                            <h4>234-9876-5400 888-0123-4567</h4>
+                        </div>
+                        <div class="contact-bx">
+                            <i class="fas fa-map-marker"></i>
+                            <h4>EMAIL</h4>
+                            <h4>helloexample@gmail.com</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
+    <section class="footer-section">
+        <footer class="footer-cont">
+            <div class="footer-abt">
+                <h2>About Us</h2>
+                <p>The Expense Tracker is designed to help you manage your finances with ease. Our intuitive interface allows you to quickly add, edit, and view your expenses, providing you with a clear overview of where your money is going.</p>
+            </div>
+            <div class="foot-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>
+                        <a href="">Add Expense</a>
+                    </li>
+                    <li>
+                        <a href="">Edit Expense</a>
+                    </li>
+                    <li>
+                        <a href="">View Expense</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="socials">
+                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+            </div>
+        </footer>
+        <div class="foot">
+            <p>&COPY; 2024 Expense Tracker | All Rights Reserved</p>
+        </div>
+    </section>
     <!-- Modals -->
     <div id="loginModal" class="modal">
         <div class="modal-content">
@@ -121,7 +192,6 @@
             <iframe src="add_expense.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
         </div>
     </div>
-
     <div id="viewExpenseModal" class="modal">
         <div class="modal-content">
             <span class="close"><i class="fas fa-close"></i></span>
@@ -130,7 +200,6 @@
             <iframe src="view_expense.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
         </div>
     </div>
-
     <div id="editExpenseModal" class="modal">
         <div class="modal-content">
             <span class="close"><i class="fas fa-close"></i></span>
@@ -140,7 +209,13 @@
             <iframe src="edit_expense.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
         </div>
     </div>
-
+    <script>
+        document.getElementById('burgerMenu').addEventListener('click', function() {
+            var navItems = document.getElementById('navItems');
+            console.log("clicked")
+            navItems.classList.toggle('active');
+        });
+    </script>
     <script>
         // Get all modal links
         var modalLinks = document.querySelectorAll('.modal-link');
