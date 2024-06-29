@@ -212,8 +212,10 @@
     <script>
         document.getElementById('burgerMenu').addEventListener('click', function() {
             var navItems = document.getElementById('navItems');
-            console.log("clicked")
+            var burgerIcon = document.querySelector('.burger-menu i');
             navItems.classList.toggle('active');
+            burgerIcon.classList.toggle('fa-bars');
+            burgerIcon.classList.toggle('fa-times');
         });
     </script>
     <script>
